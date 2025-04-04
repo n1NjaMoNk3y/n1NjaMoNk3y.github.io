@@ -1,0 +1,36 @@
+name: Deploy n1NjaMok3y Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to main
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository with submodules
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch the hackropole-hugo theme
+
+      # Set up Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true  # Use extended version for broader compatibility
+
+      # Build the site
+      - name: Build
+        run: hugo --minify
+
+      # Deploy to GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs  # Matches publishDir in config.toml
+          publish_branch: main  # Deploy to main branch
