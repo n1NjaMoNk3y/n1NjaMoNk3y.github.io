@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="https://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://n1NjaMonk3y.github.io/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://n1NjaMonk3y.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://n1NjaMonk3y.github.io/"
+                />
+  </url>
+</urlset>

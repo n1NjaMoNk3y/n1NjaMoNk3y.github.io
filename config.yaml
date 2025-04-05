@@ -4,6 +4,7 @@
 baseURL: "https://n1NjaMonk3y.github.io"
 title: n1NjaMoNk3y
 defaultContentLanguage: "en"
+publishDir: "docs"
 pluralizelisttitles: false
 capitalizeListTitles: false
 disableKinds: ["taxonomy"]
