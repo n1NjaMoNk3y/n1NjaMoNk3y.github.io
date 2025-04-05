@@ -1,0 +1,4 @@
+[submodule "themes/hackropole"]
+    path = themes/hackropole
+    url = https://github.com/FCSC-FR/hackropole-hugo
+
