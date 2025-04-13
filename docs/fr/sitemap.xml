@@ -2,16 +2,16 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="https://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://n1NjaMonk3y.github.io/fr/</loc>
+    <loc>http://localhost:1313/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://n1NjaMonk3y.github.io/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://n1NjaMonk3y.github.io/fr/"
+                href="http://localhost:1313/fr/"
                 />
   </url>
 </urlset>

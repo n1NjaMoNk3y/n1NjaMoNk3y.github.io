@@ -9,14 +9,6 @@ pluralizelisttitles: false
 capitalizeListTitles: false
 disableKinds: ["taxonomy"]
 ignoreErrors: ["error-disable-taxonomy"]
-params:
-  # These paths must end with `/`
-  API_PATH: https://example.com/
-  FILER_PATH: https://example.com/filer/
-  FCSC_TOP_LIMIT: 1000
-  CHALLENGES_TOP_LIMIT: 20
-  WRITEUPS_TOP_LIMIT: 20
-  WRITEUPS_RECENT_LIMIT: 20
 
 # Site Theme
 theme: hackropole
@@ -38,21 +30,10 @@ permalinks:
   fcsc: /:slug:/
 
 languages:
-  fr:
-    languageCode: fr
-    languageName: 🇫🇷 Français
-    params:
-      description: Bienvenue sur ce site d'archivage d'épreuves de CTF.
-
-      # Homepage event banner
-      homepageNoticeTitle: Un évènement arrive !
-      homepageNoticeContent: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      # homepageNoticeCountdown: 1712322000000
-    weight: 1
-
   en:
     languageCode: en
     languageName: English
+    contentDir: "content/"
     params:
       description: Cybersecurity | Hacking | Technology
       # Homepage event banner
