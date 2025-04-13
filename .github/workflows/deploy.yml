@@ -2,6 +2,8 @@ name: Build and Commit Hugo Site
 on:
   push:
     branches: [main]
+permissions:
+  contents: write  # Grants write access to the repository
 jobs:
   build:
     runs-on: ubuntu-latest
