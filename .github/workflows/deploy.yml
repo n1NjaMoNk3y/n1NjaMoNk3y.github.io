@@ -13,7 +13,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '2.49.0'  # Match your local Hugo version
+          hugo-version: 'latest'  # Match your local Hugo version
       - name: Build
         run: hugo --minify
       - name: Commit Docs
